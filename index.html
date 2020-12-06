@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Exercicio 05</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="main()">
+    <h1>Detonação</h1>
+        <script language=javascript>
+    function iniciar(tempo,dif)
+        {window.setTimeout("mostra(tempo,dif)",tempo);}
+    function mostra(tempo,dif)
+        {valor = document.tempo.tempor.value; document.tempo.tempor.value = (valor - dif); 
+            if(valor == 1){TempoExpirou();}
+                else{iniciar(tempo,dif);}}
+</script>
+
+<script language=javascript>
+    tempo = 1000; dif = 1; iniciar(tempo,dif);
+    function TempoExpirou(){window.location = "http://www.nomedomeusite.com.br"}
+</script>
+<center>
+
+<table width=100% cellspacing=0 cellpadding=0>
+    <tr>
+        <td align=center valign=top class=texto>
+            <form name=tempo id=tempo>
+                <input type=text readonly name=tempor size=10 value=30 class=entrada>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</center>
+  
+</body>
+</html>
